@@ -1,26 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nainhaja <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/11/04 19:46:13 by nainhaja          #+#    #+#             */
-/*   Updated: 2019/11/06 23:53:30 by nainhaja         ###   ########.fr       */
+/*   Created: 2019/10/09 12:45:12 by nainhaja          #+#    #+#             */
+/*   Updated: 2019/10/22 21:44:03 by nainhaja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
-
+//#include "libft.h"
 # include <stdlib.h>
-# include <string.h>
-# include <unistd.h>
+#include <stdio.h>
+size_t	ft_strlen(const char *str)
+{
+	int i;
 
-int		get_next_line(int fds, char **line);
-char	*ft_strdup(char *s);
-char	*ft_substr(char *s, unsigned int start, unsigned int len);
-char	*ft_strchr(char *str, int c);
-size_t	ft_strlen(char *str);
+	i = 0;
+	while (str[i])
+		i++;
+	return (i);
+}
+int main()
+{
+	//typedef struct Coordonnees Coordonnees;
+typedef struct Coordonnees
+{
+    int x;
+    int y;
+}Coordonnees;
+ Coordonnees point;
+    
+    point.x = 10;
+    point.y = 20;
 
-#endif
+//printf("hh %d %d",2*64 + 52,180);
+}
